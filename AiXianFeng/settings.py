@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'axf',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,22 @@ WSGI_APPLICATION = 'AiXianFeng.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# 配置数据库信息
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'aixianfeng',  # 数据库名称
+        'HOST': 'localhost',    # IP地址
+        'PORT': 3306,           # 端口号
+        'USER': 'root',         # 数据库用户名
+        'PASSWORD': 'root',     # 数据库密码
     }
 }
 
@@ -119,3 +132,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 配置静态文件目录
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+# 配置上传文件目录
+# MDEIA_ROOT = os.path.join(BASE_DIR, r'static/mdeia')
