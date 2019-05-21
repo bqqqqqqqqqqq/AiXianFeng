@@ -1,4 +1,4 @@
-## Django项目 - 爱鲜蜂[AiXianFeng]
+## Django项目 - 爱鲜蜂APP[AiXianFeng]
 
 **Django项目虚拟环境搭建: `mkvirtualenv AiXianFengEnvs`**  
 **Django项目工程创建: `django-admin startproject AiXianFeng`**  
@@ -11,7 +11,7 @@
 - 生成迁移文件: `python manage.py makemigrations`
 - 执行迁移文件: `python manage.py migrate`  
 
-
+**Django项目启动: `python manage.py runserver 127.0.0.1:80000`**
 
 
 

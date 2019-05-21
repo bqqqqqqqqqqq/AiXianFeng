@@ -83,6 +83,7 @@ WSGI_APPLICATION = 'AiXianFeng.wsgi.application'
 # }
 
 # 配置数据库信息
+# 创建MySQL数据库: create database aixianfeng default charset=utf8;
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -134,9 +135,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # 配置静态文件目录
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-)
+]
 
 # 配置上传文件目录
 # MDEIA_ROOT = os.path.join(BASE_DIR, r'static/mdeia')

@@ -2,6 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/商品数据插入.sql" dialect="ClickHouse" />
-    <file url="file://$PROJECT_DIR$/插入数据.sql" dialect="ClickHouse" />
+    <file url="file://$PROJECT_DIR$/首页数据插入.sql" dialect="ClickHouse" />
   </component>
 </project>
