@@ -1,3 +1,17 @@
+-- 闪送超市-商品分类数据
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("104749","热销榜","全部分类:0",1);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("104747","新品尝鲜","全部分类:0",2);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103532","优选水果","全部分类:0#进口水果:103534#国产水果:103533",3);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103581","卤味熟食","全部分类:0",4);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103536","牛奶面包","全部分类:0#酸奶乳酸菌:103537#牛奶豆浆:103538#面包蛋糕:103540",5);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103549","饮料酒水","全部分类:0#饮用水:103550#茶饮/咖啡:103554#功能饮料:103553#酒类:103555#果汁饮料:103551#碳酸饮料:103552#整箱购:104503#植物蛋白:104489#进口饮料:103556",6);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103541","休闲零食","全部分类:0#进口零食:103547#饼干糕点:103544#膨化食品:103543#坚果炒货:103542#肉干蜜饯:103546#糖果巧克力:103545",7);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103557","方便速食","全部分类:0#方便面:103558#火腿肠卤蛋:103559#速冻面点:103562#下饭小菜:103560#罐头食品:103561#冲调饮品:103563",8);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103569","粮油调味","全部分类:0#杂粮米面油:103570#厨房调味:103571#调味酱:103572",9);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("103575","生活用品","全部分类:0#个人护理:103576#纸品:103578#日常用品:103580#家居清洁:103577",10);
+insert into axf_foodtypes(typeid,typename,childtypenames,typesort) values("104958","冰激凌","全部分类:0",11);
+
+-- 闪送超市-商品数据
 insert into axf_goods(productid,productimg,productname,productlongname,isxf,pmdesc,specifics,price,marketprice,categoryid,childcid,childcidname,dealerid,storenums,productnum) values("11951","http://img01.bqstatic.com/upload/goods/000/001/1951/0000011951_63930.jpg@200w_200h_90Q","","乐吧薯片鲜虾味50.0g",0,0,"50g",2.00,2.500000,103541,103543,"膨化食品","4858",200,4);
 insert into axf_goods(productid,productimg,productname,productlongname,isxf,pmdesc,specifics,price,marketprice,categoryid,childcid,childcidname,dealerid,storenums,productnum) values("2405","http://img01.bqstatic.com/upload/goods/000/000/2405/0000002405.jpg@200w_200h_90Q","康师傅,3+2,葱香奶油味,休闲零食","康师傅3+2葱香奶油125.0g",0,0,"125g",5.00,5.000000,103541,103544,"饼干糕点","4858",200,3);
 insert into axf_goods(productid,productimg,productname,productlongname,isxf,pmdesc,specifics,price,marketprice,categoryid,childcid,childcidname,dealerid,storenums,productnum) values("3972","http://img01.bqstatic.com/upload/goods/000/000/3972/0000003972.jpg@200w_200h_90Q","","格力高百力滋奶咖味50.0g",0,0,"50g",5.00,5.000000,103541,103544,"饼干糕点","4858",200,3);
